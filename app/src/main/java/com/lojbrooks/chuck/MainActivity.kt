@@ -8,6 +8,8 @@ import androidx.compose.material.Surface
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.lifecycle.viewmodel.compose.viewModel
+import com.lojbrooks.chuck.presentation.jokelist.JokeListViewModel
 import com.lojbrooks.chuck.ui.theme.ChuckTheme
 
 class MainActivity : ComponentActivity() {
@@ -18,10 +20,15 @@ class MainActivity : ComponentActivity() {
                 // A surface container using the 'background' color from the theme
                 Surface(color = MaterialTheme.colors.background) {
                     Greeting("Android")
+                    JokeListScreen()
                 }
             }
         }
     }
+}
+
+@Composable
+fun JokeListScreen(viewModel: JokeListViewModel = viewModel()) {
 }
 
 @Composable
