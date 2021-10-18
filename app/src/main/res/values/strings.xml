@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Chuck</string>
+    <string name="joke_list_error">Failed to fetch jokes</string>
+    <string name="try_again_button">Try again</string>
 </resources>
